@@ -29,6 +29,7 @@ export const setWeatherInfo = async (
             payload: {
                 forecast: resp.data.weather[0].description,
                 icon: resp.data.weather[0].icon,
+                temp: resp.data.main.temp,
                 verdict: verdicts(resp.data.weather[0].icon),
                 location: resp.data.name
             }

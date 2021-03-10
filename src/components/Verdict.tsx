@@ -17,6 +17,7 @@ const Verdict = ({ weather }: VerdictProps) => {
             />
             <h4>{weather.verdict}</h4>
             <p>{weather.forecast}</p>
+            <h4 className="text-danger">{weather.temp} &deg;C</h4>
             <strong>{weather.location}</strong>
           </Col>
         </CardBody>

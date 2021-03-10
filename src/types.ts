@@ -2,6 +2,7 @@
 export interface WeatherInfo {
     location: string;
     forecast: string;
+    temp: number;
     verdict: string | undefined;
     icon: string;
 }

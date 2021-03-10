@@ -8,7 +8,7 @@ const ajax = axios.create({
 export const getCurrentWeatherData = (location: string) => {
     console.log(process.env);
     return ajax.get(
-        `/weather?q=${encodeURIComponent(location)}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+        `/weather?q=${encodeURIComponent(location)}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
     );
 }
 
